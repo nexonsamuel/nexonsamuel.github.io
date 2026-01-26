@@ -54,7 +54,7 @@ body {
 
 .hero {
   text-align: center;
-  padding-top: 3rem;
+  padding: 3rem 1.5rem 2rem;
 }
 
 .profile-img {
@@ -62,25 +62,26 @@ body {
   height: 140px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
 }
 
 .hero h1 {
   font-size: 2.2rem;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.3rem;
 }
 
 .hero h2 {
   font-size: 1.2rem;
   font-weight: 400;
   color: #4b5563;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
 }
 
 .summary {
-  max-width: 700px;
-  margin: 0 auto 2rem auto;
+  max-width: 720px;
+  margin: 0 auto;
   font-size: 1rem;
+  line-height: 1.6;
   color: #374151;
 }
 
