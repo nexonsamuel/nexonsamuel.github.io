@@ -1,73 +1,178 @@
-body {
-  font-family: Arial, sans-serif;
+/* =========================
+   Global Reset & Base Styles
+   ========================= */
+
+* {
+  box-sizing: border-box;
   margin: 0;
-  background: #f5f7fa;
-  color: #333;
+  padding: 0;
 }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+               Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  color: #1f2933;
+  background-color: #ffffff;
+}
+
+/* =========================
+   Navigation
+   ========================= */
+
+.nav {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.2rem 2rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #374151;
+  font-weight: 500;
+}
+
+.nav a:hover {
+  color: #111827;
+}
+
+/* =========================
+   Layout Containers
+   ========================= */
+
+.hero,
+.content {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2.5rem 2rem;
+}
+
+/* =========================
+   Hero Section
+   ========================= */
 
 .hero {
   text-align: center;
-  padding: 60px 20px;
-  background: #ffffff;
 }
 
-.profile-pic {
+.profile-img {
   width: 140px;
+  height: 140px;
   border-radius: 50%;
-  margin-bottom: 20px;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
 }
 
-h1 {
-  color: #0b5ed7;
-  margin-bottom: 10px;
+.hero h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.25rem;
 }
 
-.tagline {
-  font-weight: bold;
-  margin-bottom: 15px;
+.hero h2 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #4b5563;
+  margin-bottom: 1.5rem;
 }
 
 .summary {
   max-width: 700px;
-  margin: auto;
+  margin: 0 auto 2rem auto;
+  font-size: 1rem;
+  color: #374151;
 }
 
-.nav {
+/* =========================
+   Call To Action Buttons
+   ========================= */
+
+.cta {
   display: flex;
   justify-content: center;
-  gap: 20px;
-  background: #0b5ed7;
-  padding: 15px;
+  gap: 1rem;
 }
 
-.nav a {
-  color: #ffffff;
+.btn {
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 500;
 }
 
-.nav a:hover {
-  text-decoration: underline;
+.btn.primary {
+  background-color: #111827;
+  color: #ffffff;
 }
 
-.content, .highlights {
-  max-width: 900px;
-  margin: auto;
-  padding: 50px 20px;
+.btn.secondary {
+  border: 1px solid #d1d5db;
+  color: #111827;
+}
+
+/* =========================
+   Content Sections
+   ========================= */
+
+h1 {
+  font-size: 1.9rem;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
 }
 
 .meta {
-  font-style: italic;
-  color: #666;
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-bottom: 0.75rem;
 }
 
-ul {
-  padding-left: 20px;
+.role {
+  margin-bottom: 2.2rem;
 }
 
-footer {
+.role ul {
+  padding-left: 1.2rem;
+}
+
+.role li {
+  margin-bottom: 0.5rem;
+}
+
+/* =========================
+   Footer
+   ========================= */
+
+.footer {
   text-align: center;
-  padding: 30px;
-  background: #ffffff;
-  font-size: 0.9em;
+  padding: 1.5rem;
+  font-size: 0.85rem;
+  color: #6b7280;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* =========================
+   Responsive Adjustments
+   ========================= */
+
+@media (max-width: 640px) {
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero h2 {
+    font-size: 1.05rem;
+  }
+
+  .cta {
+    flex-direction: column;
+  }
 }
