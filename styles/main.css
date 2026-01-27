@@ -200,12 +200,16 @@ p {
     font-weight: 500;
     border: 1px solid var(--border-color);
     transition: var(--transition);
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .tag:hover {
     background-color: var(--secondary-color);
     color: #ffffff;
     border-color: var(--secondary-color);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
 .hero-cta {

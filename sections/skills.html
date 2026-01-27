@@ -20,7 +20,7 @@
                 <li><a href="experience.html">Experience</a></li>
                 <li><a href="skills.html">Skills</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="https://docs.google.com/document/d/1mEcgPIn94ioAN8UJgiRfOzdPC38ILuGP/export?format=pdf" target="_blank" class="resume-btn">Resume</a></li>
+                <li><a href="https://docs.google.com/document/d/1mEcgPIn94ioAN8UJgiRfOzdPC38ILuGP/view" target="_blank" class="resume-btn">Resume</a></li>
             </ul>
         </div>
     </nav>
@@ -45,33 +45,31 @@
                     <div class="skill-item">PySpark</div>
                     <div class="skill-item">SQL</div>
                     <div class="skill-item">Shell/Bash</div>
-                    <div class="skill-item">PL/SQL</div>
+                    <div class="skill-item">YAML</div>
                 </div>
             </div>
 
             <!-- Data Platforms & Analytics -->
             <div class="skills-category">
                 <h3>Data Platforms & Analytics</h3>
-                <div class="skills-list">
+                <div class="skills-list skills-list-3col">
                     <div class="skill-item">Databricks</div>
                     <div class="skill-item">Prophecy</div>
-                    <div class="skill-item">Metaphactory</div>
                     <div class="skill-item">Apache Airflow</div>
-                    <div class="skill-item">Databricks Workflows</div>
                     <div class="skill-item">Tableau</div>
                     <div class="skill-item">Power BI</div>
+                    <div class="skill-item">MarkLogic</div>
                 </div>
             </div>
 
             <!-- Database Technologies -->
             <div class="skills-category">
                 <h3>Database Technologies</h3>
-                <div class="skills-list">
+                <div class="skills-list skills-list-3col">
                     <div class="skill-item">Teradata</div>
                     <div class="skill-item">MySQL</div>
                     <div class="skill-item">PostgreSQL</div>
                     <div class="skill-item">SQLite</div>
-                    <div class="skill-item">Snowflake</div>
                     <div class="skill-item">Unity Catalog</div>
                     <div class="skill-item">MarkLogic</div>
                 </div>
@@ -80,7 +78,7 @@
             <!-- Cloud & AWS Services -->
             <div class="skills-category">
                 <h3>Cloud & AWS Services</h3>
-                <div class="skills-list">
+                <div class="skills-list skills-list-3col">
                     <div class="skill-item">AWS EC2</div>
                     <div class="skill-item">AWS S3</div>
                     <div class="skill-item">AWS Lambda</div>
@@ -99,7 +97,7 @@
             <!-- Containerization & Orchestration -->
             <div class="skills-category">
                 <h3>Containerization & Orchestration</h3>
-                <div class="skills-list">
+                <div class="skills-list skills-list-3col">
                     <div class="skill-item">Docker</div>
                     <div class="skill-item">Kubernetes</div>
                     <div class="skill-item">AWS ECR</div>
@@ -112,19 +110,17 @@
             <!-- Web & API Frameworks -->
             <div class="skills-category">
                 <h3>Web & API Frameworks</h3>
-                <div class="skills-list">
+                <div class="skills-list skills-list-3col">
                     <div class="skill-item">REST APIs</div>
                     <div class="skill-item">Flask</div>
-                    <div class="skill-item">FastAPI</div>
                     <div class="skill-item">Streamlit</div>
-                    <div class="skill-item">HTTP Protocols</div>
                 </div>
             </div>
 
-            <!-- Generative AI & ML -->
+            <!-- Generative AI & Machine Learning -->
             <div class="skills-category">
                 <h3>Generative AI & Machine Learning</h3>
-                <div class="skills-list">
+                <div class="skills-list skills-list-3col">
                     <div class="skill-item">Large Language Models (LLMs)</div>
                     <div class="skill-item">OpenAI GPT</div>
                     <div class="skill-item">LangChain</div>
@@ -140,7 +136,7 @@
             <!-- Data Governance & Security -->
             <div class="skills-category">
                 <h3>Data Governance & Security</h3>
-                <div class="skills-list">
+                <div class="skills-list skills-list-3col">
                     <div class="skill-item">Row-Level Security</div>
                     <div class="skill-item">Dynamic Data Masking</div>
                     <div class="skill-item">Data Lineage & Metadata Management</div>
@@ -153,7 +149,7 @@
             <!-- Additional Tools & Concepts -->
             <div class="skills-category">
                 <h3>Additional Tools & Concepts</h3>
-                <div class="skills-list">
+                <div class="skills-list skills-list-3col">
                     <div class="skill-item">ETL Development</div>
                     <div class="skill-item">Data Modeling</div>
                     <div class="skill-item">SPARQL Queries</div>
@@ -162,6 +158,7 @@
                     <div class="skill-item">Linux Administration</div>
                     <div class="skill-item">Event-Driven Architecture</div>
                     <div class="skill-item">Pandas & NumPy</div>
+                    <div class="skill-item">Delta Lake</div>
                 </div>
             </div>
 
@@ -174,10 +171,29 @@
             <p>&copy; 2025 Nexon Samuel. All rights reserved.</p>
             <div class="footer-links">
                 <a href="https://github.com/nexonsamuel" target="_blank">GitHub</a>
-                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/nexon-samuel" target="_blank">LinkedIn</a>
                 <a href="contact.html">Contact</a>
             </div>
         </div>
     </footer>
+
+    <style>
+        /* 3-column layout for specific skills sections */
+        .skills-list-3col {
+            grid-template-columns: repeat(3, 1fr) !important;
+        }
+
+        @media (max-width: 768px) {
+            .skills-list-3col {
+                grid-template-columns: repeat(2, 1fr) !important;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .skills-list-3col {
+                grid-template-columns: 1fr !important;
+            }
+        }
+    </style>
 </body>
 </html>
