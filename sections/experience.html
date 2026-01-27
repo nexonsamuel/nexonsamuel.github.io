@@ -1,59 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Experience | Nexon Samuel</title>
-  <link rel="stylesheet" href="../styles/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nexon Samuel - Professional Work Experience as Data Engineer">
+    <meta name="keywords" content="Data Engineer Experience, AWS, Databricks, Prophecy, ETL">
+    <title>Experience - Nexon Samuel</title>
+    <link rel="stylesheet" href="../styles/main.css">
 </head>
 <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../index.html">Nexon Samuel</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="https://docs.google.com/document/d/1mEcgPIn94ioAN8UJgiRfOzdPC38ILuGP/export?format=pdf" target="_blank" class="resume-btn">Resume</a></li>
+            </ul>
+        </div>
+    </nav>
 
-  <nav class="nav">
-    <a href="../index.html">Home</a>
-    <a href="skills.html">Skills</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Professional Experience</h1>
+            <p>8+ years building scalable data infrastructure, leading platform initiatives, and enabling data-driven organizations.</p>
+        </div>
+    </section>
 
-  <section class="content">
-    <h1>Professional Experience</h1>
+    <!-- Experience Content -->
+    <section class="experience-section">
+        <div class="container">
 
-    <h2>Amgen — Platform Data Engineer</h2>
-    <p class="meta">Mar 2024 – Dec 2025 | Suffern, NY</p>
-    <ul>
-      <li>Owned Prophecy platform roadmap enabling 12+ domain teams to self-serve ETL development.</li>
-      <li>Deployed and managed self-hosted Prophecy platform on AWS (EC2, Docker, ECR).</li>
-      <li>Implemented Databricks Unity Catalog, Delta Sharing, and secure data masking.</li>
-      <li>Built event-driven workflows using AWS Lambda, SQS, SNS, and EventBridge.</li>
-      <li>Designed secure AWS storage architectures with encryption, backup, and lifecycle policies.</li>
-      <li>Developed Power BI dashboards monitoring SLA adherence and platform health.</li>
-    </ul>
+            <!-- AMGEN - Platform Data Engineer -->
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <h3>Platform Data Engineer</h3>
+                        <p class="experience-company">Amgen</p>
+                    </div>
+                    <p class="experience-duration">Mar 2024 - Dec 2025 | Suffern, NY</p>
+                </div>
+                <ul class="experience-bullets">
+                    <li>Owned Prophecy platform roadmap and adoption for 12+ domain teams, enabling self-service ETL development through templated components, reducing bottlenecks and accelerating delivery cycles.</li>
+                    <li>Managed end-to-end AWS deployment of Prophecy platform (EC2, Docker, ECR), automating version upgrades, container builds, and health monitoring; enabled zero-incident deployments across 8 quarterly releases.</li>
+                    <li>Led Databricks Unity Catalog implementation and POCs for Delta Sharing, Workflow Scheduling, and ML model serving; configured row-level security and dynamic data masking for 8+ teams.</li>
+                    <li>Built event-driven workflows using Python (Flask) and AWS Lambda, orchestrated via SQS, SNS, and EventBridge; replaced cron-based scheduling with event triggers for 50+ pipelines.</li>
+                    <li>Designed secure AWS storage architectures (S3, EBS, EFS) with KMS encryption, automated backups, and S3 Access Points for 10+ TB of regulated data.</li>
+                    <li>Developed Power BI dashboards and automated alerting for Databricks cluster costs, usage trends, and job performance across 12 teams using Spark SQL.</li>
+                </ul>
+            </div>
 
-    <h2>Amgen — Semantics Data Engineer</h2>
-    <p class="meta">Feb 2022 – Feb 2024 | Tampa, FL</p>
-    <ul>
-      <li>Led Healthcare Provider semantic data domain end-to-end.</li>
-      <li>Built semantic pipelines integrating MarkLogic and Metaphactory.</li>
-      <li>Migrated governance from AWS Glue to Databricks Unity Catalog.</li>
-      <li>Mentored engineers and standardized CI/CD and deployment practices.</li>
-    </ul>
+            <!-- AMGEN - Semantics Data Engineer -->
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <h3>Semantics Data Engineer</h3>
+                        <p class="experience-company">Amgen</p>
+                    </div>
+                    <p class="experience-duration">Feb 2022 - Feb 2024 | Tampa, FL</p>
+                </div>
+                <ul class="experience-bullets">
+                    <li>Spearheaded Healthcare Provider semantic domain, owning end-to-end delivery from sourcing through production support; built 15+ pipelines processing 5M+ provider records.</li>
+                    <li>Implemented MarkLogic and Metaphactory integration enabling federated semantic queries and SPARQL exploration for 30+ analytics and business users.</li>
+                    <li>Built shared automation utilities and semantic pipelines across S3, Databricks, graph ingestion, and Airflow; reduced new pipeline development time from ~3 weeks to ~1 week.</li>
+                    <li>Migrated semantic datasets from AWS Glue to Databricks Unity Catalog, improving governance, asset tracking, and lineage visibility.</li>
+                    <li>Performed design/code reviews and mentored junior engineers, standardizing Git branching strategies, CI/CD practices, and YAML-based deployment patterns.</li>
+                </ul>
+            </div>
 
-    <h2>Teradata — Cloud Automation Intern</h2>
-    <p class="meta">May 2021 – Dec 2021 | San Diego, CA</p>
-    <ul>
-      <li>Developed automation scripts for database diagnostics and operations.</li>
-      <li>Enhanced Groovy and Symphony workflows for parallel execution.</li>
-      <li>Implemented LDAP-based authentication via REST APIs.</li>
-    </ul>
+            <!-- TERADATA - Cloud Automation Intern -->
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <h3>Cloud Automation Intern</h3>
+                        <p class="experience-company">Teradata</p>
+                    </div>
+                    <p class="experience-duration">May 2021 - Dec 2021 | San Diego, CA</p>
+                </div>
+                <ul class="experience-bullets">
+                    <li>Developed Teradata automation scripts to streamline database control settings and enable abort diagnostics for production database operations.</li>
+                    <li>Enhanced Groovy and Symphony workflows to support serial, parallel, and hybrid workload execution patterns.</li>
+                    <li>Implemented LDAP-based authentication for Teradata DSS via REST APIs using Python (ldap3, tdtestpy, BeautifulSoup), enabling secure customer access.</li>
+                </ul>
+            </div>
 
-    <h2>LTIMindtree — Data Analyst / ETL System Administrator</h2>
-    <p class="meta">Aug 2016 – Oct 2019 | Mumbai, India</p>
-    <ul>
-      <li>Built analytics workflows for defect pattern analysis and predictive maintenance.</li>
-      <li>Designed PL/SQL models enabling root-cause analysis.</li>
-      <li>Delivered Tableau dashboards for engineering and operations teams.</li>
-    </ul>
+            <!-- LTIMINDTREE - Data Analyst/ETL System Administrator -->
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <h3>Data Analyst / ETL System Administrator</h3>
+                        <p class="experience-company">LTIMindtree</p>
+                    </div>
+                    <p class="experience-duration">Aug 2016 - Oct 2019 | Mumbai, MH, India</p>
+                </div>
+                <ul class="experience-bullets">
+                    <li>Partnered with banking operations and risk teams to translate business requirements into analytics solutions supporting operational performance monitoring.</li>
+                    <li>Built Python-based analytics workflows (Pandas, NumPy, Scikit-learn) analyzing transaction data and operational metrics to identify performance trends and anomalies.</li>
+                    <li>Designed PL/SQL data models and procedures for root-cause analysis of operational failures; delivered Tableau dashboards visualizing KPIs and operational trends.</li>
+                    <li>Transitioned to ETL system administration, automating job monitoring, scheduling, and failure recovery on Linux-based infrastructure.</li>
+                    <li>Supported migration of legacy ETL applications to cloud environments, contributing to workload assessment, testing, and deployment.</li>
+                </ul>
+            </div>
 
-  </section>
+        </div>
+    </section>
 
+    <!-- Education Section -->
+    <section class="education-section">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="education-items">
+                <div class="education-item">
+                    <h3>Master of Science in Business Analytics & Information Systems</h3>
+                    <p class="education-school">University of South Florida</p>
+                    <p class="education-duration">Jan 2020 - Dec 2021</p>
+                </div>
+                <div class="education-item">
+                    <h3>Bachelor's in Information Technology</h3>
+                    <p class="education-school">University of Mumbai</p>
+                    <p class="education-duration">Jun 2013 - May 2016</p>
+                </div>
+                <div class="education-item">
+                    <h3>Associate in Computer Engineering</h3>
+                    <p class="education-school">University of Mumbai</p>
+                    <p class="education-duration">Jun 2010 - May 2013</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Nexon Samuel. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://github.com/nexonsamuel" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/nexon-samuel" target="_blank">LinkedIn</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
