@@ -3,7 +3,7 @@
 **Portfolio:** https://nexonsamuel.github.io  
 **GitHub:** https://github.com/nexonsamuel
 
-A professional, responsive portfolio website showcasing 8+ years of data engineering 
+A professional, responsive portfolio website showcasing 7+ years of data engineering 
 expertise in cloud infrastructure, data pipeline orchestration, and platform development.
 
 ---
@@ -42,8 +42,8 @@ I'm a Data & AI Enthusiast with proven expertise in:
 **Amgen - Platform Data Engineer** (Mar 2024 - Dec 2025)
 - Led Prophecy low-code ETL adoption across 12+ domain teams
 - Built event-driven infrastructure for self-service provisioning (S3, IAM, Databricks)
-- Implemented Databricks Unity Catalog with governance controls for 8+ teams
-- Managed AWS infrastructure with zero-incident deployments (8 quarterly releases)
+- Implemented Databricks Unity Catalog with governance controls for 9+ teams
+
 
 **Amgen - Semantics Data Engineer** (Feb 2022 - Feb 2024)
 - Built 15+ pipelines processing 5M+ healthcare provider records
