@@ -908,6 +908,26 @@ p {
     border-color: var(--secondary-color);
 }
 
+/* ============================================
+   SKILLS PAGE - RESPONSIVE GRID LAYOUTS
+   ============================================ */
+
+.skills-list-3col {
+    grid-template-columns: repeat(3, 1fr) !important;
+}
+
+@media (max-width: 768px) {
+    .skills-list-3col {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-list-3col {
+        grid-template-columns: 1fr !important;
+    }
+}
+
 /* Contact Section Styles */
 .contact-section {
     background-color: var(--light-bg);
@@ -1194,4 +1214,4 @@ p {
 
 .mb-2 {
     margin-bottom: 2rem;
-}
+}   
